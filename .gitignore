@@ -1,0 +1,9 @@
+/out/
+.idea_modules/
+fabric.properties
+.target
+/target
+.classpath
+.project
+.settings
+.externalToolBuilders/
