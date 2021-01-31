@@ -2,6 +2,7 @@ package co.mark.howard.guiceexample;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.enterprise.inject.spi.CDI;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -25,6 +26,8 @@ public class Application {
 	
 	public void start () {
 		customerService.helloWorld();
+		
+		CustomerService hogeCustomerService = (CustomerService) CDI.current().select(CustomerService.class);
 	}
 
 }
